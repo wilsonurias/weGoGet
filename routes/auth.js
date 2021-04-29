@@ -17,7 +17,7 @@ router.get('/login',
   },
   function(req, res) {
     console.log('Login was called in the Sample');
-    res.redirect('/todos');
+    res.redirect('/posts');
 });
 
 router.get('/openid/return',
@@ -31,7 +31,7 @@ router.get('/openid/return',
   },
   function(req, res) {
     console.log('We received a return from AzureAD.');
-    res.redirect('/todos');
+    res.redirect('/posts');
   });
 
 router.post('/openid/return',
@@ -45,7 +45,7 @@ router.post('/openid/return',
   },
   function(req, res) {
     console.log('We received a return from AzureAD.');
-    res.redirect('/todos');
+    res.redirect('/posts');
   });
 
 

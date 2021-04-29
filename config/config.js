@@ -1,15 +1,15 @@
 exports.creds = {
     identityMetadata: 'https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration', 
 
-    clientID: '<add your own>',
+    clientID: 'c7a92b4d-73b9-446c-8ef2-6ba443f2ba72',
   
-    clientSecret: '<add your own>', 
+    clientSecret: 'k-f9gQxFH1Qi-L~26_G5LT_Ec-NBAq~qVv', 
   
     responseType: 'code id_token', 
   
     responseMode: 'form_post', 
   
-    redirectUrl: 'http://localhost:2121/auth/openid/return', 
+    redirectUrl: 'https://weGoGet-5.russelltallen.repl.co/auth/openid/return', 
   
     allowHttpForRedirectUrl: true,
   
@@ -37,11 +37,11 @@ exports.creds = {
     clockSkew: null,
   };
   
-  exports.destroySessionUrl = 'http://localhost:2121';
+  exports.destroySessionUrl = 'https://weGoGet-5.russelltallen.repl.co';
   
   exports.useMongoDBSessionStore = false;
   
-  exports.databaseUri = 'mongodb://localhost/OIDCStrategy';
+  exports.databaseUri = 'mongodb://https://weGoGet-5.russelltallen.repl.co/OIDCStrategy';
   
   exports.mongoDBSessionMaxAge = 24 * 60 * 60;  
   
